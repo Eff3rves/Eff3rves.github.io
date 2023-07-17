@@ -24,6 +24,10 @@ nav{
     background-color:#6f6d5b;
 }
 
+img{
+    max-width: 500px;
+}
+
 
 nav button{
     margin: 0;
@@ -39,6 +43,7 @@ nav button{
     font-size:x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 
 nav button:hover{
     color:  #595d4b;
