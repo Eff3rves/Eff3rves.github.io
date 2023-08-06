@@ -49,7 +49,7 @@ function hideDescription(){
 
 function show(pgno){ //function to show selected page no
     hideall();
-
+    window.scrollTo(0,0);
     //select the page based on the parameter passed in
     let onepage=document.querySelector("#page"+pgno);
 
