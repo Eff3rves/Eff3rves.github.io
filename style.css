@@ -6,26 +6,51 @@
 --accent: #595d4b;
 */
 
-
+/* overall layouts*/
 body{
     margin: 0%;
-    background-color: #eef1f1;
+    padding: 0%;
+    background-color: #494d3b;
+    font-size:x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #1f2e1d;
+}
+
+.content{
+    background-color: #f9fafa;
 }
 
 h1{
-    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+    text-align: center;
+    font-weight: 200;
+    /*background-color:#6f6d5b;*/
 }
 
 nav{
     display: flex;
-    flex-direction: col;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     background-color:#6f6d5b;
 }
 
-img{
-    max-width: 500px;
+p{
+    font-family:'Times New Roman', Times, serif
+}
+
+h2{
+    margin:0%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    background-color:#6f6d5b;
+    color: #f9fafa;
+    font-weight: 100;
 }
 
 
@@ -44,26 +69,212 @@ nav button{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.hp_content{
+    min-height: 200px;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
+
+}
+
+.hp_content p{
+    margin-block-end: 0%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #a7a7a7;
+    align-self: start;
+    margin: 0;
+    margin-left: 5%;
+    padding: 1%;
+    min-width: 500px;
+    
+
+}
+
+.hp_content button{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-right: 2.5%;
+    border: 0;
+    justify-self: end;
+    background-color:#595d4b;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    font-weight: 200;
+    color: #f9fafa;
+}
+
+
+.hp_content img{
+    grid-column-end: 2;
+    grid-row: 1;
+    justify-self: center;
+    margin: 0%;
+}
+
+img{
+
+    max-width: 300px;
+}
 
 nav button:hover{
     color:  #595d4b;
     background-color: #e7e9e9
 }
 
+.hp_content button:hover{
+
+    transform: skew(-20deg);
+    background-color: #1e1f1e;
+
+}
+
+.type_shape{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #a7a7a7;
+}
+
+.type_contents{
+    display: flex;
+    flex-direction: row;
+    background-color: #a7a7a7;
+    /*margin-left: 5%;
+
+    /*padding: 0%;
+    width: min-content;*/
+}
+
+.type_contents img{
+    transform:skew(-10deg);
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.type_description{
+    display: flex;
+    flex-direction: column;
+}
+
+.eq_content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+#guitarKnob h3{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0%;
+    margin: 0;
+}
+
+.eq_content img{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#guitarKnob{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-self: flex-end;
+}
+
+#guitarKnob img{
+    max-width: 100px;
+    max-height: 100px;  
+}
+
+
+.eq_content p{
+    grid-column:span 2;
+    grid-row: 2;
+    background-color: #e7e9e9;
+}
+
+.eq_pick p{
+
+    background-color: #e7e9e9;
+    margin-bottom: 5%;
+}
+
+.eq_jack p{
+
+    background-color: #e7e9e9;
+
+}
+
+.onIcon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1f2e1d;
+    color: #e7e9e9;
+    text-align: center;
+    align-self: flex-end;
+}
+
+
+#guitarKnob button{
+    height: 10%;
+    width: 20%;
+    align-self: flex-end;
+    border: 0;
+    background-color: #494d3b;
+    color: #e7e9e9;
+    border-radius: 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#guitarKnob button:hover{
+
+    background-color: #6f6d5b;
+    color: #e7e9e9;
+    border-radius: 10%;
+    
+}
+
+#guitarKnob p{
+    background-color: #f9fafa;
+}
+
+.hist_content{
+    display: flex;
+    flex-direction: row;
+    background-color: #a7a7a7;
+    margin-top: 5%;
+
+    margin-bottom: 5%;
+}
+
+
 @media screen and (max-width:800px){
     body{
         margin: 0%;
-        padding-top: 0%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
     }
     .content{
-        margin-left: 20%;
-
+        background-color: #f9fafa
     }
     nav{
+        grid-column: 1;
         min-width: 125px;
         width: 20%;
         display: flex;
-        position: fixed;
         flex-direction: column;
         font-size:larger;
 
@@ -77,4 +288,71 @@ nav button:hover{
         justify-content: center;
 
     }
+    
+    #hp_content{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+
+    #hp_content button{
+        align-self: center;
+        min-height: 50px;
+        min-width: 200px;
+        margin: 5%;
+    }
+    
+    #hp_content img{
+        align-self: center;
+    }
+
+    .type_shape{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #type_contents{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
+
+    #type_description{
+        display: flex;
+        flex-direction: column;
+        /*background-color: #e7e9e9;*/
+    }
+    
+    .eq_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #guitarKnob{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-self: center;
+    }
+    
 }
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes Antirotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
+  }
+
