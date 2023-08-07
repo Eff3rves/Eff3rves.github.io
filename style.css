@@ -260,6 +260,26 @@ nav button:hover{
 }
 
 
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes Antirotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
+  }
+
+  
 @media screen and (max-width:800px){
     body{
         margin: 0%;
@@ -289,20 +309,20 @@ nav button:hover{
 
     }
     
-    #hp_content{
+    .hp_content{
         display: flex;
         flex-direction: column;
         margin-right: 5%;
     }
 
-    #hp_content button{
+    .hp_content button{
         align-self: center;
         min-height: 50px;
         min-width: 200px;
         margin: 5%;
     }
     
-    #hp_content img{
+    .hp_content img{
         align-self: center;
     }
 
@@ -311,14 +331,14 @@ nav button:hover{
         flex-direction: column;
 
     }
-    #type_contents{
+    .type_contents{
         display: flex;
         flex-direction: column;
         align-self: center;
 
     }
 
-    #type_description{
+    .type_description{
         display: flex;
         flex-direction: column;
         /*background-color: #e7e9e9;*/
@@ -337,22 +357,3 @@ nav button:hover{
     }
     
 }
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
-  }
-
-  @keyframes Antirotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-180deg);
-    }
-  }
-
