@@ -1,8 +1,7 @@
 /*
---text: #101314;
---background: #eef1f1;
---primary-button: #5d4b59;
---secondary-button: #f9fafa;
+--text: #FBE9D0;
+--background: #244855 , #874F41, #90AEAD;
+--primary-button: #E64833;
 --accent: #595d4b;
 */
 
@@ -10,14 +9,23 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-color: #494d3b;
+    background-color: #f9fafa;
     font-size:x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #1f2e1d;
+    color: #E64833;
+}
+
+.role{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #244855;
 }
 
 .content{
     background-color: #f9fafa;
+    
 }
 
 h1{
@@ -30,6 +38,11 @@ h1{
     /*background-color:#6f6d5b;*/
 }
 
+.hp_intro p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #244855;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -40,6 +53,7 @@ nav{
 
 p{
     font-family:'Times New Roman', Times, serif
+    
 }
 
 h2{
@@ -84,7 +98,7 @@ nav button{
     grid-row-start: 1;
     display: flex;
     flex-direction: row;
-    background-color: #a7a7a7;
+
     align-self: start;
     margin: 0;
     margin-left: 5%;
