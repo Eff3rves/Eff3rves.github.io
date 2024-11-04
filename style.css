@@ -11,17 +11,10 @@ body{
     padding: 0%;
     background-color: #f9fafa;
     font-size:x-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
     color: #E64833;
 }
 
-.role{
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #244855;
-}
 
 .content{
     background-color: #f9fafa;
@@ -38,10 +31,52 @@ h1{
     /*background-color:#6f6d5b;*/
 }
 
-.hp_intro p{
+.name{
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    background-color: #E64833;
+    color:#f9fafa ;
+    font-size: xx-large;
+}
+
+
+.name p{
+    margin: 0px;
+    padding: 0px;
+    font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #244855;
 }
+
+.hp_intro
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    color: #244855;
+    
+}
+
+.hp_self{
+    width: 100%;
+    padding: 10px;
+    background-color: #3f4b4f87;
+    margin-right: 10px;
+}
+
+.hp_intro p{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f9fafa;
+
+}
+
 
 nav{
     display: flex;
