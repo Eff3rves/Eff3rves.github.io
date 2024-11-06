@@ -7,13 +7,7 @@
     </head>
 
     <body>
-        <nav> <!--menu system-->
-            <!--changed to class since I still want to reuse it-->
-            <button class="page1btn">Home</button>
-            <button class="page2btn">Equipments</button>
-            <button class="page3btn">History</button>
-            <button class="page4btn">Types</button>
-        </nav>
+
 
         <div class = "name">
             Feng Yicheng
@@ -21,6 +15,14 @@
                 Junior Game Developer
             </p>
         </div>
+
+        <nav> <!--menu system-->
+            <!--changed to class since I still want to reuse it-->
+            <button class="page1btn">About Me</button>
+            <button class="page2btn">My Projects</button>
+            <button class="page3btn">Contact Me</button>
+            <!--<button class="page4btn">Types</button>-->
+        </nav>
 
         <div class="content" id="page1">
             <div class="hp_intro">
@@ -40,63 +42,37 @@
     </div>
 
     <div class="content" id = "page2">
-        <h1>
-            Equipments
-        </h1>
 
-        <h2>
-            What are some equipments that you might need starting out
-        </h2>
-        <h3>
-            Amplifier
-        </h3>
-        <div class =  "eq_content">
+        <div class =  "currproj_content">
+            <h1>
+                Current Project
+            </h1>
+        </div>
 
-            <img src = "image/amp.jpg" alt = "guitar collection">
-           
-            <div id="guitarKnob">
-
-                <img src = "image/knob.png" alt = "gain knob" onclick=setGain()>
-                <p>
-                    Gain
-                </p>
-                <div class="onIcon">
-                    on
-                </div>
-                <button id="playGuitar" onclick=play()>
-                    play
-                </button>
-
-            </div>
+        <div class = "pastproj_content">
+            <h1>
+                Past Projects
+            </h1>
             
-            <p>
-                Guitar amp is very important for electric guitars as it amplifies the sounds of the guitar itself so it can be heard at a louder volume.
-                They also have different settings that could change how the guitar sounds. One example is the Gain which can add some distortion to the guitar sound.
-            </p>
+            <div class = "proj">
+                <div class = "proj_title">
+                    DEMON CHEF MAYHEM
+                </div>
 
+                <div class = "examples">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/_IMrnktPYBA?si=VSOJFtPo85m07_AK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
 
-
+                <div class = "example_explain">
+                    &emsp;This is one of my recent projects where I worked with a team of both designers and developers. <br><br>
+                    &emsp;Demon Chef Mayhem is a game about a chef in kitchen hell (literally), using food ingredients as projectiles to slay enemies and collect their drop to make more food.<br><br>
+                    &emsp;The game is built in Unreal Engine 5. 
+                    I am the lead developer of this project where I had to do a lot of team management and coordination of the design and development team.
+                    In addition, I was also responsible for making the toon shader, the UIs, integrating assests from the designer and the merging mechanic of the food.
+                </div>
+            </div>
 
         </div>
-        <h3>
-            Guitar Jack
-        </h3>
-        <div class =  "eq_jack">
-            <img src = "image/guitarJack.jpg" alt = "guitarJack">
-            <p>
-            Guitar Jack is used to connect the amp to the guitar, without it it the guitar would have no way of sending sound to the amp.
-            </p>
-        </div>
-        <h3>
-            Guitar Pick
-        </h3>
-        <div class = "eq_pick">
-            <img src = "image/guitarpick.jpg" alt = "guitarPick">
-            <p>
-                guitar pick is for picking the strings but some songs require finger pick style where your fingers are used instead of holding on to a pick
-            </p>
-        </div>
-
     </div>
     
 

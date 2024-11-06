@@ -24,7 +24,7 @@ body{
 h1{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     margin: 2%;
     text-align: center;
     font-weight: 200;
@@ -34,6 +34,7 @@ h1{
 .name{
     width: fit-content;
     margin: 10px;
+    margin-left: 20px;
     padding: 10px;
     padding-bottom: 0px;
     padding-right: 50px;
@@ -112,11 +113,17 @@ nav button{
     width: 100%;
     text-decoration: none;
     color: #f9fafa;
-    background-color:#595d4b;
+    background-color:#244855;
     text-align:center;
     font-size:x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.pastproj_content h1 {
+    border-top: 1px solid #E64833; /* Adds a 1px solid line on top */
+    padding-top: 10px; /* Optional: adds space between the border and content */
+}
+
 
 .hp_content{
     min-height: 200px;
@@ -170,66 +177,47 @@ img{
 }
 
 nav button:hover{
-    color:  #595d4b;
+    color:  #244855;
     background-color: #e7e9e9
 }
 
 .hp_content button:hover{
 
     transform: skew(-20deg);
-    background-color: #1e1f1e;
+    background-color: #2e677b;
 
 }
 
-.type_shape{
-    height: 100%;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
+.examples{
+    display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #a7a7a7;
+    margin-bottom: 20px;
 }
 
-.type_contents{
-    display: flex;
-    flex-direction: row;
-    background-color: #a7a7a7;
-    /*margin-left: 5%;
-
-    /*padding: 0%;
-    width: min-content;*/
+.example_explain{
+    margin: 64px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    color:#e7e9e9;
+    text-align: center;
 }
 
-.type_contents img{
-    transform:skew(-10deg);
-    min-width: 200px;
-    max-width: 200px;
+.proj{
+    padding-top: 20px;
+    margin-left: 128px;
+    margin-right: 128px;
+    border-radius: 20px;
+    background-color: #2e677b;
 }
 
-.type_description{
-    display: flex;
-    flex-direction: column;
-}
-
-.eq_content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-}
-
-#guitarKnob h3{
-    grid-column: 1;
-    grid-row: 1;
-    padding: 0%;
-    margin: 0;
-}
-
-.eq_content img{
-    grid-column: 1;
-    grid-row: 1;
-
+.proj_title{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-bottom: 10px;
 }
 
 #guitarKnob{
