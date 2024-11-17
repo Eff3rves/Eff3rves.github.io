@@ -11,8 +11,8 @@ var type_description = document.querySelectorAll(".type_description");
 
 var typeContent = document.querySelectorAll(".type_contents");
 
+const projectImage = ["currproj1.jpg","currproj2.jpg","currproj3.jpg"]
 
-var gain = true;
 
 //select all subtopic pages
 console.log(allpages);
@@ -57,12 +57,6 @@ function show(pgno){ //function to show selected page no
     onepage.style.display="block";
 }
 
-//shows the description of the guitar clicked
-function showGuitar(num){
-    //hideGuitar(num);
-    showDescription(num);
-
-}
 
 
 function showDescription(num){
@@ -72,34 +66,6 @@ function showDescription(num){
     let oneDescription = description[num];
     oneDescription.style.display="block";
     
-}
-
-
-
-//initialise the audio but it depends on which audio in Gain
-var audio = document.getElementById("myAudio");
-function play(){
-    audio.play();
-}
-
-function setGain(){
-    gain = !gain;
-    var onIcon = document.querySelector(".onIcon");
-    var gainKnob = document.querySelector("#guitarKnob img");
-
-    if(gain){
-        audio = document.getElementById("distortedTone");
-        gainKnob.style.animation = "rotation 2s";
-        onIcon.style.backgroundColor  = "#1f2e1d";
-        onIcon.textContent = "on";
-
-    }
-    else{
-        audio = document.getElementById("cleanTone");
-        gainKnob.style.animation = "Antirotation 2s";
-        onIcon.textContent = "off";
-        onIcon.style.backgroundColor = "red";
-    }
 }
 
 /*Listen for clicks on the buttons, assign anonymous

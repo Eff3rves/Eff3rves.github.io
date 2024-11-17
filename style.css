@@ -71,13 +71,41 @@ h1{
     margin-right: 10px;
 }
 
-.hp_intro p{
+.hp_self p{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #f9fafa;
 
 }
 
+.hp_interest
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #3f4b4f87;
+    margin-left: 10px;
+}
+
+.hp_interest p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f9fafa;
+
+}
+
+.hp_skills
+{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #3f4b4f87;
+    color: #244855;
+}
+
+.hp_skills p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f9fafa;
+
+}
 
 nav{
     display: flex;
