@@ -248,83 +248,53 @@ nav button:hover{
     padding-bottom: 10px;
 }
 
-#guitarKnob{
-    grid-column: 2;
-    grid-row: 1;
+.carousel{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    align-self: flex-end;
+    justify-content: center;
 }
 
-#guitarKnob img{
-    max-width: 100px;
-    max-height: 100px;  
-}
+#carousel-image {
+    min-width:640px ;
+    min-height:360px;
+  }
 
-
-.eq_content p{
-    grid-column:span 2;
-    grid-row: 2;
-    background-color: #e7e9e9;
-}
-
-.eq_pick p{
-
-    background-color: #e7e9e9;
-    margin-bottom: 5%;
-}
-
-.eq_jack p{
-
-    background-color: #e7e9e9;
-
-}
-
-.onIcon{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: #1f2e1d;
-    color: #e7e9e9;
-    text-align: center;
-    align-self: flex-end;
-}
-
-
-#guitarKnob button{
-    height: 10%;
-    width: 20%;
-    align-self: flex-end;
-    border: 0;
-    background-color: #494d3b;
-    color: #e7e9e9;
-    border-radius: 10%;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#guitarKnob button:hover{
-
-    background-color: #6f6d5b;
-    color: #e7e9e9;
-    border-radius: 10%;
-    
-}
-
-#guitarKnob p{
-    background-color: #f9fafa;
-}
-
-.hist_content{
+  #next {
     display: flex;
-    flex-direction: row;
-    background-color: #a7a7a7;
-    margin-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 20px;
+  }
 
-    margin-bottom: 5%;
+  #prev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transform: rotate(180deg);
+    margin-right: 20px;
+  }
+
+  #prev img,
+  #next img{
+    max-height: 60px;
+    background: gray;
+    border-radius: 60px;
+    padding: 30px;
+    transition: opacity 0.1s ease; /* Smooth transition */
+  }
+
+  #next:hover img, 
+#prev:hover img {
+  opacity: 0.6; /* Set the desired transparency level (0.6 = 60% opaque) */
 }
-
-
 
 @keyframes rotation {
     from {

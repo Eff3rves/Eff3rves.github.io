@@ -11,8 +11,12 @@ var type_description = document.querySelectorAll(".type_description");
 
 var typeContent = document.querySelectorAll(".type_contents");
 
-const projectImage = ["currproj1.jpg","currproj2.jpg","currproj3.jpg"]
+const projectImage = ["image/currproj1.jpg","image/currproj2.jpg","image/currproj3.jpg"]
+let currentIndex = 0;
 
+const carouselImage = document.getElementById("carousel-image")
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
 
 //select all subtopic pages
 console.log(allpages);
@@ -79,6 +83,30 @@ page2btn.addEventListener("click", function () {
 page3btn.addEventListener("click", function () {
     show(3);
 });
-page4btn.addEventListener("click", function () {
-    show(4);
+
+
+
+function updateImage() {
+    console.log(`Updating to image: ${projectImage[currentIndex]}`);
+    carouselImage.src = projectImage[currentIndex];
+    carouselImage.alt = `projectImage ${currentIndex + 1}`;
+  }
+
+
+prevButton.addEventListener("click", () => {
+    //console.log("Previous button clicked");
+    currentIndex = (currentIndex - 1 + projectImage.length) % projectImage.length;
+    updateImage();
 });
+  
+  
+  nextButton.addEventListener("click", () => {
+    //console.log("next button clicked");
+    currentIndex = (currentIndex + 1) % projectImage.length;
+    updateImage();
+  });
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % projectImage.length;
+    updateImage();
+  }, 3000); // Change image every 3 seconds
