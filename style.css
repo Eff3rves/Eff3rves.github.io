@@ -7,56 +7,49 @@
 
 /* overall layouts*/
 body{
-    margin: 0%;
-    padding: 0%;
+      padding: 5% 10% 10% 10%;
     background-color: #f9fafa;
     font-size:x-large;
-    font-family:Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #E08E70;
 }
 
 
 .content{
-    background-color: #f9fafa;
-    display: none; /* Default: not rendered */
-    transition: opacity 0.5s ease; /* Smooth transition */
+  margin-top: 100px;
+  background-color: #f9fafa;
     
 }
 
-.content.active {
-    opacity: 1;
-    display: block; /* Ensure it's rendered */
-  }
-
-h1{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    margin: 2%;
-    text-align: center;
-    font-weight: 200;
-    /*background-color:#6f6d5b;*/
+nav {
+  padding-left: 10px;
+  display: flex;
+  gap: 20px;
+  font-size:smaller ;
 }
+
+LineBreak {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #2C3134;
+  margin: 20px 0;
+}
+
+
 
 .name{
-    width: fit-content;
-    margin: 10px;
-    margin-left: 20px;
-    padding: 10px;
-    padding-bottom: 0px;
-    padding-right: 50px;
-    background-color: #E08E70;
-    color:#2C3134 ;
-    font-size: xx-large;
+  padding-left: 10px;
+  color:#2C3134 ;
+  font-size:50px;
+  font-family:'Lexend','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 1%;
 }
 
-
-.name p{
-    margin: 0px;
-    padding: 0px;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f9fafa;
+.Content_Title{
+  font-size: xx-large;
 }
 
 .hp_intro
@@ -67,66 +60,36 @@ h1{
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
-    color: #E08E70;
     
+}
+
+.hp_intro img{
+  max-height: 300px;
+  margin: 25px;
 }
 
 .hp_self{
     width: 100%;
     padding: 10px;
-    background-color: #2C3134;
-    margin-right: 10px;
-}
-
-.hp_self p{
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f9fafa;
-
-}
-
-.hp_interest
-{
-    width: 100%;
-    padding: 10px;
-    background-color: #2C3134;
+    padding-top: 0%;
     margin-left: 10px;
 }
 
-.hp_interest p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f9fafa;
-
+.hp_self p{
+  font-size: smaller;
+  color: #323030;
+  font-family: 'Quicksand','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.hp_skills
-{
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #2C3134;
-    color: #E08E70;
+nav a {
+  text-decoration: none;
+  color: #727272;
 }
 
-.hp_skills p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f9fafa;
+nav a:hover{
 
+  color: #000000;
 }
-
-nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    background-color:#6f6d5b;
-}
-
-nav button.active {
-    background-color: #586166; /* Green */
-    color: white;
-  }
-  
 
 p{
     font-family:'Times New Roman', Times, serif
@@ -143,28 +106,6 @@ h2{
     color: #f9fafa;
     font-weight: 100;
 }
-
-
-nav button{
-    margin: 0;
-    border: 0;
-    padding-right:10%;
-    padding-left:10%;
-    padding: 1%;
-    width: 100%;
-    text-decoration: none;
-    color: #f9fafa;
-    background-color:#2C3134;
-    text-align:center;
-    font-size:x-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.pastproj_content h1 {
-    border-top: 1px solid #E08E70; /* Adds a 1px solid line on top */
-    padding-top: 10px; /* Optional: adds space between the border and content */
-}
-
 
 .hp_content{
     min-height: 200px;
@@ -191,78 +132,37 @@ nav button{
 
 }
 
-.hp_content button{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    margin-right: 2.5%;
-    border: 0;
-    justify-self: end;
-    background-color:#595d4b;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
-    font-weight: 200;
-    color: #f9fafa;
-}
 
-
-.hp_content img{
-    grid-column-end: 2;
-    grid-row: 1;
-    justify-self: center;
-    margin: 0%;
-}
-
-img{
-
-    max-width: 300px;
-}
-
-nav button:hover{
-    color:  #2C3134;
-    background-color: #e7e9e9
-}
-
-.hp_content button:hover{
-
-    transform: skew(-20deg);
-    background-color: #2C3134;
-
+.Projects{
+  display:flex;
+  flex-direction: row;
 }
 
 .examples{
     display:flex;
     flex-direction: row;
-    justify-content: center;
     margin-bottom: 20px;
 }
 
 .examples img{
-    min-width:640px ;
-    min-height:360px;
+    max-width:640px ;
 }
 
 .example_explain{
-    margin: 64px;
     margin-top: 10px;
     padding-bottom: 20px;
-    font-size: x-large;
-    color:#e7e9e9;
-    text-align: center;
+    font-size:smaller;
+    color:#000000;
 }
 
 .proj{
-    padding-top: 20px;
-    margin-left: 128px;
-    margin-right: 128px;
-    border-radius: 20px;
-    background-color: #2C3134;
+  padding-top: 30px;
+  padding-right: 50px;
 }
 
 .proj_title{
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    margin-left: 20px;
+    text-align: left;
+    font-size: x-large;
     padding-bottom: 10px;
 }
 
@@ -318,34 +218,28 @@ nav button:hover{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    margin-left: 100px;
-
+    margin-left: 50px;
 }
 
 .contact_logo img{
-    height: 100px;
+    height: 50px;
 }
 
 .contact_content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left:40px;
-    color: #2C3134
+    color: #2C3134;
+  padding-left: 10px;
+  font-size: smaller;
 }
 
-
-.hidden {
-    opacity: 0;
-    transform: translateY(50px); /* Start slightly below */
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  
-.hidden.show {
-opacity: 1;
-transform: translateY(0);
+.Contact_Stuff{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
-  
+
 
 @keyframes rotation {
     from {

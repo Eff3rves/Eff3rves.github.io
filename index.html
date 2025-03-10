@@ -1,182 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>index</title>
+        <title>Home</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <script src="my.js" defer></script>
+        <script src="nav.js" defer></script>
     </head>
 
     <body>
 
 
         <div class = "name">
-            Feng Yicheng
-            <p>
-                Junior Game Developer
-            </p>
+            Feng Yicheng - Junior Game Developer
         </div>
 
-        <nav> <!--menu system-->
-            <!--changed to class since I still want to reuse it-->
-            <button class="page1btn">About Me</button>
-            <button class="page2btn">My Projects</button>
-            <button class="page3btn">Contact Me</button>
-            <!--<button class="page4btn">Types</button>-->
-        </nav>
-
-        <div class="content" id="page1">
+        <nav></nav>
+        
+        <div class="content">
+            <div class="Content_Title">
+                ABOUT
+            </div>
             <div class="hp_intro">
-                <div class="hp_self">
-                    Hello, welcome to my portfolio.
-                    <p>
-                        &emsp;I am a game developer. I have been playing games since I was very young and it has always been my passion to create my own game.<br><br>
-                        &emsp;I was born in Shanghai,China and moved to Singapore when I was in Primary School. I am now in Nanyang Polytechnic studying for the Diploma in Game Development and Technology.<br><br>
-                        &emsp;My dream has always been to make my own game with a team of capable people. I have been gaining experiences through my school projects and my own projects to improvee my ability to one day achieve that dream.
-
-                    </p>
-                </div>
                 <img src="image/profile.jpg" alt="Profile picture" />
-            </div>
+                <div class="hp_self">
 
-            <!--
-            <div class="hp_intro">
-                <img src="image/gym.png" alt="Hobby picture" />
-                <div class="hp_interest">
-                    My interests.
                     <p>
-                        &emsp;I enjoy playing single player games like Elden Ring and Monster Hunter World. <br><br>
-                        &emsp;I am a big fan of more storytelling games, putting hours into Persona 5 and Soulsbourne game. Sometimes I also play competitive games, recently got into League of Legends, though I am very bad at it. Playing a variety of games have opened my eyes to thee possibilities of games and the stories and messages it can bring to the world, which is why I chose a career in game development.<br><br>
-                        &emsp;I like to keep my lifestyle active, exercising 5 times a week normally. I believe that with a healthy body, I will have a healthy mind, making it easier to work with people and keep up my enthusiasm for work and enjoy my day to day life.
-
+                        I am a game developer. I have been playing games since I was very young and it has always been my passion to create my own game.<br><br>
+                        I was born in Shanghai, China and moved to Singapore when I was in Primary School. I am now in Nanyang Polytechnic studying for the Diploma in Game Development and Technology.<br><br>
+                        My dream has always been to make my own game with a team of capable people. I have been gaining experiences through my school projects and my own projects to improve my ability to one day achieve that dream.
+                        <br><br>
+                        I am proficient in Unity, being a <a href="pdf/unityscore.pdf" target="_blank">certified associate programmer</a>.
+                        <br><br>
+                        I am currently studying for a Diploma in Game Development and Technology in NYP.
                     </p>
                 </div>
-            </div>
-            -->
 
-            <div class = "hp_skills">
-                My skills and abilities.
-                <p>
-                    I am proficient in Unity, being a certified associate programmer.<br>
-                    I am currently studying for a Diploma in Game Development and Technology in NYP.
-                </p>
-
-                <object data="pdf/unityscore.pdf" type="application/pdf" title="unityPdf" width="500" height="720">
-                    <a href="unityscore.pdf">shree</a> 
-                </object>
             </div>
+            <div class="Contact_Stuff">
+                <div class = "contact">
+                     <div class = "contact_logo">
+                         <img src="image/emailIcon.png" alt = "emailIcon"/>
+                     </div>
+         
+                     <div class = "contact_content">
+                         fengyicheng93@gmail.com
+                     </div>
+                </div>
+         
+                <div class = "contact">
+                     <div class = "contact_logo">
+                         <img src="image/phoneIcon.png" alt = "emailIcon"/>
+                     </div>
+         
+                     <div class = "contact_content">
+                         65+ 88334589
+                     </div>
+                 </div>
+         
+                 <div class = "contact">
+                    <div class = "contact_logo">
+                        <img src="image/Linkedin.png" alt = "Linkedin"/>
+                    </div>
+                     <div class = "contact_content">
+                         www.linkedin.com/in/feng-yicheng-7b7359340
+                     </div>
+                 </div>
+         
+             </div>
         </div>
       
     </div>
 
-    <div class="content" id = "page2">
-
-        <div class =  "currproj_content">
-            <h1>
-                Current Project
-            </h1>
-            <div class = "hidden">
-                <div class = "proj">
-                    <div class = "proj_title">
-                        FPS Movement Shooter
-                    </div>
-
-                    <div class="carousel">
-                        <button id="prev">
-                            <img src = "image/arrowbutton.png" alt = "Previous" />
-                        </button>
-                        <img id="carousel-image" src="image/currproj1.jpg" alt="Image 1">
-                        <button id="next">
-                            <img src = "image/arrowbutton.png" alt = "Previous" />
-                        </button>
-                    </div>
-
-                    <div class = "example_explain">
-                        &emsp;This is my current project that I am developing alone. <br><br>
-                        &emsp;The project is using Unity and Photon Pun2 for its multiplayer<br><br>
-                        &emsp;I always had a interest in movement shooters which is why I wanted to make this project. It is a small scale 1v1 shooter set on a small map where players can move around quickly with the movement skills provided.
-                        &emsp;The current project is now in Itch.io. <a href = "https://eff3rves.itch.io/vector-shot"> vector-shot</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class = "pastproj_content">
-            <h1>
-                Past Projects
-            </h1>
-
-            <div class = "hidden">
-                <div class = "proj">
-                    <div class = "proj_title">
-                        DEMON CHEF MAYHEM
-                    </div>
-
-                    <div class = "examples">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/_IMrnktPYBA?si=VSOJFtPo85m07_AK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
-                    <div class = "example_explain">
-                        &emsp;This is one of my recent projects where I worked with a team of both designers and developers. <br><br>
-                        &emsp;Demon Chef Mayhem is a game about a chef in kitchen hell (literally), using food ingredients as projectiles to slay enemies and collect their drop to make more food.<br><br>
-                        &emsp;The game is built in Unreal Engine 5. 
-                        I am the lead developer of this project where I had to do a lot of team management and coordination of the design and development team.
-                        In addition, I was also responsible for making the toon shader, the UIs, integrating assests from the designer and the merging mechanic of the food.
-                    </div>
-                </div>
-            </div>
-
-            <div class = "hidden">
-                <div class = "proj">
-                    <div class = "proj_title">
-                        Internship
-                    </div>
-
-                    <div class = "examples">
-                        <img src = "image/NTU_Arise.jpg" alt = "NTU_ARISE" />
-                    </div>
-
-                    <div class = "example_explain">
-                        &emsp;I worked under NTU ARISE for my Internship. <br><br>
-                        &emsp;I worked on a website that trackes scores for their events. I worked on both the front end and backend, using both HTML and the React Framework. I also worked on the SQL database for the scores and setting it up online in a server.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="content" id = "page3">
-
-
-       <div class = "contact">
-            <div class = "contact_logo">
-                <img src="image/emailIcon.png" alt = "emailIcon"/>
-            </div>
-
-            <div class = "contact_content">
-                fengyicheng93@gmail.com
-            </div>
-       </div>
-
-       <div class = "contact">
-            <div class = "contact_logo">
-                <img src="image/phoneIcon.png" alt = "emailIcon"/>
-            </div>
-
-            <div class = "contact_content">
-                65+ 88334589
-            </div>
-        </div>
-
-        <div class = "contact">
-    
-            <div class = "contact_content">
-                <p>www.linkedin.com/in/feng-yicheng-7b7359340</p>
-            </div>
-        </div>
-
+    <LineBreak></LineBreak>
+    <div class="Content_Title">
+        PROJECTS
     </div>
 
+        <div class="Projects">
+
+            <div class = "proj">
+                <div class = "proj_title">
+                    DON'T DO THAT
+                </div>
+        
+                <div class = "examples">
+                    <img src="image/DUNDOTHATBanner.png" alt="DUNDOTHATBanner">
+                </div>
+        
+                <div class = "example_explain">
+                    Link:
+                    <br><br>
+                    Link: <a href = "https://tobxtr.itch.io/dont-do-that"> Don't Do That itch.io page</a>
+
+                    <br><br>
+                    What I did: 
+
+                    <br><br>
+                    Platforms: 
+
+                    <br><br>
+                    Team Size:
+
+                    <br><br>
+                    Project Length:
+
+                    <br><br>
+                    Engine:
+                </div>
+            </div>
+
+            <div class = "proj">
+                <div class = "proj_title">
+                    VECTOR-SHOT
+                </div>
+    
+                <div class = "examples">
+                    <img src="image/VectorShotBanner.png" alt="VectorShotBanner">
+                </div>
+                <div class = "example_explain">
+                    <br><br>
+                    Link:
+                    <br><br>
+                    Link: <a href = "https://eff3rves.itch.io/vector-shot"> vector-shot itch.io page</a>
+                    <br><br>
+                    What I did: 
+
+                    <br><br>
+                    Platforms: 
+
+                    <br><br>
+                    Team Size:
+
+                    <br><br>
+                    Project Length:
+
+                    <br><br>
+                    Engine:
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="Projects">
+            <div class = "proj">
+                <div class = "proj_title">
+                    DEMON CHEF MAYHEM
+                </div>
+        
+                <div class = "examples">
+                    <img src="image/DCMBanner.png" alt="DCMBanner">
+                </div>
+        
+                <div class = "example_explain">
+                    Link:
+                    <br><br>
+                    What I did: 
+
+                    <br><br>
+                    Platforms: 
+
+                    <br><br>
+                    Team Size:
+
+                    <br><br>
+                    Project Length:
+
+                    <br><br>
+                    Engine:
+                </div>
+            </div>
+
+            <div class = "proj">
+                <div class = "proj_title">
+                    INTERNSHIP
+                </div>
+        
+                <div class = "examples">
+                    <img src="image/NTU_Arise.jpg" alt="NTU">
+                </div>
+        
+                <div class = "example_explain">
+                    Link:
+                    <br><br>
+                    What I did: 
+
+                    <br><br>
+                    Platforms: 
+
+                    <br><br>
+                    Team Size:
+
+                    <br><br>
+                    Project Length:
+
+                    <br><br>
+                    Engine:
+                </div>
+            </div>
+        </div>
 
 
     </body>
