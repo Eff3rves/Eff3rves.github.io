@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Don't Do That", url: "DunDoThat.html" },
         { name: "VectorShot", url: "VectorShot.html" },
         { name: "Demon Chef Mayhem", url: "DCM.html" },
-        { name: "Internship", url: "internship.html" }
     ];
     
     const nav = document.querySelector("nav");

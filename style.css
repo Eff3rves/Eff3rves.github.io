@@ -145,7 +145,8 @@ h2{
 }
 
 .examples img{
-    max-width:640px ;
+    max-width:640px;
+
 }
 
 .example_explain{
@@ -166,53 +167,6 @@ h2{
     padding-bottom: 10px;
 }
 
-.carousel{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#carousel-image {
-    min-width:640px ;
-    min-height:360px;
-  }
-
-  #next {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    margin-left: 20px;
-  }
-
-  #prev{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transform: rotate(180deg);
-    margin-right: 20px;
-  }
-
-  #prev img,
-  #next img{
-    max-height: 60px;
-    background: gray;
-    border-radius: 60px;
-    padding: 30px;
-    transition: opacity 0.1s ease; /* Smooth transition */
-  }
-
-  #next:hover img, 
-#prev:hover img {
-  opacity: 0.6; /* Set the desired transparency level (0.6 = 60% opaque) */
-}
 
 .contact{
     display: flex;
@@ -240,47 +194,4 @@ h2{
   justify-content: left;
 }
 
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
-  }
-
-  @keyframes Antirotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-180deg);
-    }
-  }
-
-  
-  @media (max-width: 768px) {
-    .hp_intro,
-    .proj {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .hp_intro img,
-    .proj img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    .carousel {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .carousel img {
-      max-width: 80%;
-    }
-  }
   
