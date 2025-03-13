@@ -21,12 +21,76 @@ body{
     
 }
 
+/* Navbar styles */
 nav {
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: smaller;
+  background-color: #f9fafa; /* Optional: background color */
+  padding: 10px;
+}
+
+/* Menu button (visible only in small screens) */
+.menu-button {
+  background-color: #f9fafa;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none; /* Initially hidden on larger screens */
+}
+
+/* Container for nav links */
+.nav-links {
   display: flex;
   gap: 20px;
-  font-size:smaller ;
 }
+
+nav a {
+  text-decoration: none;
+  color: #727272;
+}
+
+nav a:hover{
+
+  color: #000000;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Show the menu button */
+    .menu-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+       font-size: xx-large;
+        font-family: 'Quicksand','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Hide nav links initially */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Show links when expanded */
+    nav.expanded .nav-links {
+        display: flex;
+    }
+
+    /* Style links for vertical layout */
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        background-color: #f9fafa;
+        text-align: center;
+        text-decoration: none;
+    }
+
+}
+
 
 LineBreak {
   display: block;
@@ -79,16 +143,6 @@ LineBreak {
   font-size: smaller;
   color: #323030;
   font-family: 'Quicksand','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-nav a {
-  text-decoration: none;
-  color: #727272;
-}
-
-nav a:hover{
-
-  color: #000000;
 }
 
 p{
@@ -194,4 +248,51 @@ h2{
   justify-content: left;
 }
 
-  
+@media screen and (max-width: 768px) {
+  /* Stack projects vertically */
+  .Projects {
+      flex-direction: column;
+      align-items: center; /* Center the projects */
+  }
+
+  /* Stack image above self-intro */
+  .hp_intro {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .hp_intro img {
+      max-width: 100%; /* Ensure image scales properly */
+      height: auto;
+  }
+
+  .hp_self {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+  }
+
+  /* Center the name */
+  .name {
+      text-align: center;
+      font-size: 40px; /* Slightly reduce size for mobile */
+  }
+
+  /* Adjust project titles */
+  .proj {
+      text-align: center;
+      padding-right: 0;
+  }
+
+  /* Center contact info */
+  .Contact_Stuff {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .contact {
+      margin-left: 0;
+  }
+}
