@@ -52,7 +52,7 @@ nav a:hover{
   color: #000000;
 }
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     /* Show the menu button */
     .menu-button {
         display: block;
