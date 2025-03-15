@@ -209,7 +209,7 @@ justify-content: left;
 
 
 /* When screen width is 768px or less, switch to vertical layout */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .proj_screenshots {
       flex-direction: column; /* Stack images vertically */
       align-items: center;
