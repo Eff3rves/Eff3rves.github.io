@@ -53,3 +53,43 @@ document.addEventListener("DOMContentLoaded", function () {
         container.appendChild(img);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const screenshots = document.querySelectorAll(".screenshot");
+    const lightbox = document.createElement("div");
+    lightbox.classList.add("lightbox");
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = document.createElement("img");
+    lightbox.appendChild(lightboxImg);
+
+    const closeBtn = document.createElement("button");
+    closeBtn.innerHTML = "&times;";
+    closeBtn.classList.add("close-btn");
+    lightbox.appendChild(closeBtn);
+
+    // Open lightbox on image click
+    screenshots.forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.style.visibility = "visible";
+            lightbox.style.opacity = "1";
+        });
+    });
+
+    // Close lightbox on button click or clicking outside image
+    closeBtn.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    function closeLightbox() {
+        lightbox.style.opacity = "0";
+        setTimeout(() => {
+            lightbox.style.visibility = "hidden";
+        }, 300);
+    }
+});

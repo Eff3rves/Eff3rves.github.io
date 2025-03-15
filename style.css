@@ -190,9 +190,23 @@ h2{
 }
 
 
-.Projects{
-  display:flex;
-  flex-direction: row;
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  
+  /* Initial hidden state */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+/* When visible, fade in */
+.Projects.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .examples{

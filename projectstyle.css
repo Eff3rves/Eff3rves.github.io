@@ -197,7 +197,55 @@ justify-content: left;
 
 .screenshot:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
+
+
+/* Lightbox (fullscreen image display) */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Enlarged image inside lightbox */
+.lightbox img {
+  width: 80%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+/* Close button */
+.lightbox .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Responsive lightbox for mobile (fill width, not height) */
+@media (max-width: 1080px) {
+  .lightbox img {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+  }
+}
+
 
 @media (max-width: 1080px) {
   .proj{
